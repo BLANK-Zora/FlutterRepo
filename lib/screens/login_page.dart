@@ -63,15 +63,16 @@ class _LoginPageState extends State<LoginPage> {
             ),
 
             InkWell(
+              splashColor: Colors.redAccent,
               onTap:  () async =>  {
                 await Future.delayed(const Duration(seconds: 2)),
-                {Navigator.pushNamed(context, MyRoutes.homeRoute)}
+                // {Navigator.pushNamed(context, MyRoutes.homeRoute)}
               },
-              child: AnimatedContainer(
-                duration: const Duration(seconds: 2),
+              child: Ink(
+                // duration: const Duration(seconds: 2),
                 width: 150,
                 height: 80,
-                alignment: Alignment.center,
+                // alignment: Alignment.center,
                 decoration: (
                   BoxDecoration(borderRadius: BorderRadius.circular(20),
                   color: Colors.purple.shade200,
