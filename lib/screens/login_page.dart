@@ -62,43 +62,43 @@ class _LoginPageState extends State<LoginPage> {
               height: 20,
             ),
 
-            InkWell(
-              splashColor: Colors.redAccent,
-              onTap:  () async =>  {
-                await Future.delayed(const Duration(seconds: 2)),
-                // {Navigator.pushNamed(context, MyRoutes.homeRoute)}
-              },
-              child: Ink(
-                // duration: const Duration(seconds: 2),
-                width: 150,
-                height: 80,
-                // alignment: Alignment.center,
-                decoration: (
-                  BoxDecoration(borderRadius: BorderRadius.circular(20),
-                  color: Colors.purple.shade200,
-                )),
-                child: const Text("Login",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20
-                ),
-                ),
-              ),
-            )
-            // ElevatedButton(
-            //   onPressed: () =>
-            //       {Navigator.pushNamed(context, MyRoutes.homeRoute)},
-            //   style: const ButtonStyle(
-            //       backgroundColor: MaterialStatePropertyAll(
-            //           Color.fromARGB(181, 107, 99, 255)),
-            //       foregroundColor: MaterialStatePropertyAll(Colors.white),
-            //       minimumSize: MaterialStatePropertyAll(Size(120, 70))),
-            //   child: const Text(
-            //     "Login",
-            //     style: TextStyle(fontWeight: FontWeight.w300, fontSize: 17),
+            // InkWell(
+            //   splashColor: Colors.redAccent,
+            //   onTap:  () async =>  {
+            //     await Future.delayed(const Duration(seconds: 2)),
+            //     // {Navigator.pushNamed(context, MyRoutes.homeRoute)}
+            //   },
+            //   child: Ink(
+            //     // duration: const Duration(seconds: 2),
+            //     width: 150,
+            //     height: 80,
+            //     // alignment: Alignment.center,
+            //     decoration: (
+            //       BoxDecoration(borderRadius: BorderRadius.circular(20),
+            //       color: Colors.purple.shade200,
+            //     )),
+            //     child: const Text("Login",
+            //     style: TextStyle(
+            //       color: Colors.white,
+            //       fontWeight: FontWeight.bold,
+            //       fontSize: 20
+            //     ),
+            //     ),
             //   ),
             // )
+            ElevatedButton(
+              onPressed: () =>
+                  {Navigator.pushNamed(context, MyRoutes.homeRoute)},
+              style: const ButtonStyle(
+                  backgroundColor: MaterialStatePropertyAll(
+                      Color.fromARGB(181, 107, 99, 255)),
+                  foregroundColor: MaterialStatePropertyAll(Colors.white),
+                  minimumSize: MaterialStatePropertyAll(Size(120, 70))),
+              child: const Text(
+                "Login",
+                style: TextStyle(fontWeight: FontWeight.w300, fontSize: 17),
+              ),
+            )
           ]),
         )));
   }
